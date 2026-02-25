@@ -8,9 +8,8 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import QuizTake from "./pages/QuizTake";
-import NotFound from "./pages/NotFound";
-import WordGame from "./pages/WordGame";
 import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -39,7 +38,6 @@ const App = () => (
             <Route path="/reports" element={<Dashboard />} />
             <Route path="/users" element={<Dashboard />} />
             <Route path="/voice" element={<Dashboard />} />
-            <Route path="/game" element={<WordGame />} />
             <Route path="/quiz/:quizId" element={<QuizTake />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

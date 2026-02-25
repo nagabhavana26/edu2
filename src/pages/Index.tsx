@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, ArrowRight, BookOpen, Target, Briefcase, Users, CheckCircle, Brain } from "lucide-react";
+import { GraduationCap, ArrowRight, BookOpen, Target, Briefcase, Users, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const features = [
   { icon: BookOpen, title: "Smart Courses", description: "Personalized learning paths that adapt to your progress" },
   { icon: Target, title: "Real-Time Quizzes", description: "Time-controlled assessments with instant feedback" },
   { icon: Briefcase, title: "Job Matching", description: "Opportunities based on your skills and eligibility" },
-  { icon: Brain, title: "Educational Games", description: "Fun word challenges to sharpen your mind" },
   { icon: Users, title: "Parent Alerts", description: "Automatic notifications on student performance" },
 ];
 
@@ -47,11 +46,6 @@ export default function Index() {
             <div className="flex gap-4 justify-center">
               <Link to="/auth">
                 <Button size="lg">Start Learning <ArrowRight className="w-5 h-5 ml-2" /></Button>
-              </Link>
-              <Link to="/game">
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5">
-                  Play Word Game <Brain className="w-5 h-5 ml-2" />
-                </Button>
               </Link>
               <Link to="/dashboard">
                 <Button size="lg" variant="secondary">Watch Demo</Button>
