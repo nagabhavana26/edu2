@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import QuizTake from "./pages/QuizTake";
 import NotFound from "./pages/NotFound";
 import WordGame from "./pages/WordGame";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +29,7 @@ const App = () => (
             <Route path="/quizzes" element={<Dashboard />} />
             <Route path="/analytics" element={<Dashboard />} />
             <Route path="/jobs" element={<Dashboard />} />
-            <Route path="/profile" element={<Dashboard />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/students" element={<Dashboard />} />
             <Route path="/content" element={<Dashboard />} />
             <Route path="/settings" element={<Dashboard />} />
